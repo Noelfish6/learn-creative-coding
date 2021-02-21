@@ -20,9 +20,12 @@ function setup() {
 var r = 0
 var x = 50, y = 50
 var vx = 3, vy = 3
+var txt = "Hello"
 function draw() {
   // background(0)
   ellipse(x, y, 50)
+  text(txt, x+100, y)
+  txt += "."
   x = x + vx
   y = y + vy
   vy += 0.2
