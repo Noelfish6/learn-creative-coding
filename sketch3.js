@@ -29,6 +29,11 @@ function draw() {
   x = x + vx
   y = y + vy
   vy += 0.2
+  if (mouseIsPressed){
+    fill('red')
+  } else {
+    fill("yellow")
+  }
   if (y > height) {
     vy = -vy * 0.6
     y = height
