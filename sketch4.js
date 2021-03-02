@@ -3,8 +3,12 @@ function setup() {
   background(100)
 }
 
-var x = 10
+var x = 10, y = 10
 function draw() {
-  rect(x, 10, 50, 20)
+  rect(x, y, 50, 20)
   x += 50 + 10
+  if (x>width){
+    x=0
+    y+=30
+  }
 }
