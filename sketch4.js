@@ -6,6 +6,7 @@ function setup() {
 var x = 10, y = 10
 function draw() {
   var w = random(30,80)
+  fill(100 + random(155), 59, 59)
   rect(x, y, w, 20)
   x += w + 10
   if (x>width){
