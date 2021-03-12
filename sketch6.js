@@ -5,9 +5,11 @@ function setup() {
 
 function draw() {
   background(0)
-  let r = 100
+  let r = 10
   for(var i = 0; i<10; i++){
-    fill(map(i, 0, 10, 0, 255), 0, 255)
-    ellipse(i*mouseX, height/5, 100-i*5)
+    noFill()
+    strokeWeight(5)
+    stroke(map(i, 0, 10, 0, 255), 0, 255)
+    ellipse(width/2, height/2, 500-i*25-i*map(mouseX, 0, width, 0, 20))
   }
 }
