@@ -12,10 +12,6 @@ function mousePressed() {
   var r = random(5, 50)
   for(var i=0; i<count;i++){
   fill(random(255), random(200,255), random(100,200))
-  ellipse(mouseX + i*5, mouseY, r)
+    ellipse(mouseX + random(-50, 50), mouseY + random(-50, 50), r)
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f2c7833a6d31659947f68458f5f1bf172933b040
