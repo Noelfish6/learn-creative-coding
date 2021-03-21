@@ -7,7 +7,7 @@ function draw() {
 
 }
 
-function mousePressed() {
+function mouseMoved() {
   var count = int(random(5, 15))
   var r = random(5, 50)
   for(var i=0; i<count;i++){
