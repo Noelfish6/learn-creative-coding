@@ -10,8 +10,9 @@ function draw() {
 function mouseMoved() {
   var count = int(random(5, 15))
   var r = random(5, 50)
+  var delta = abs(pmouseX - mouseX)
   for(var i=0; i<count;i++){
   fill(random(255), random(200,255), random(100,200))
-    ellipse(mouseX + random(-50, 50), mouseY + random(-50, 50), r)
+    ellipse(mouseX + random(-delta, delta), mouseY + random(-delta, delta), r)
   }
 }
