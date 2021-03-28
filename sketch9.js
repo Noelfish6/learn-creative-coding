@@ -4,7 +4,8 @@ function setup() {
 }
 
 function draw() {
-  var clr = color(100)
-  fill(clr)
-  ellipse(mouseX, mouseY, 20, 20)
+  colorMode(HSB)
+  fill(mouseX % 360, 100, 100)
+  ellipse(mouseX, mouseY, 50, 50)
+  noStroke()
 }
