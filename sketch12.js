@@ -11,6 +11,7 @@ function draw() {
   
   for(var o =0; o<8; o++){
     rotate(o / 8 * 360)
+    let scaleDelta = random(0.9, 0.98)
     push()
     for(var i = 0; i<30; i++){
       let midColor = lerpColor(clr1, clr2, i/30)
