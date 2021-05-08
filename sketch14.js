@@ -6,7 +6,6 @@ function setup() {
 function draw() {
   background(0, 10)
   translate(mouseX, mouseY)
-  //translate(50,0)
   rotate(frameCount/10)
   scale(map(mouseX, 0, width, -PI/2, PI))
   shearX(map(mouseY, 0, width, -PI / 2, PI))
