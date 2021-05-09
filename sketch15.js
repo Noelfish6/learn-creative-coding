@@ -5,7 +5,12 @@ function setup() {
 
 function draw() {
   translate(width/2, height/2)
-  translate(frameCount, 0)
   rotate(frameCount)
+  translate(frameCount, 0)
+  if (frameCount%5 < 3) {
+    fill("red")
+  } else {
+    fill("white")
+  }
   rect(0, 0, 50, 50)
 }
