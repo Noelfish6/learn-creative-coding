@@ -8,9 +8,10 @@ function draw() {
   rotate(frameCount)
   translate(frameCount, 0)
   if (frameCount%5 < 3) {
-    fill("red")
+    fill(255 - random(100), 45, 45)
   } else {
-    fill("white")
+    fill(255 - random(200), 247, 33)
   }
-  rect(0, 0, 50, 50)
+  scale(1/sqrt(frameCount))
+  ellipse(0, 0, 50, 50)
 }
